@@ -1,125 +1,234 @@
+<!-- Allture.in - Homepage -->
+<!DOCTYPE html>
 <html lang="en">
- <head>
-  <meta charset="utf-8"/>
-  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-  <title>
-   Allture.in
-  </title>
-  <script src="https://cdn.tailwindcss.com">
-  </script>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Allture - Custom Websites at Low Price</title>
   <style>
-   @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
-        @keyframes slideIn {
-            from { transform: translateY(20px); opacity: 0; }
-            to { transform: translateY(0); opacity: 1; }
-        }
-        .fade-in {
-            animation: fadeIn 2s ease-in-out;
-        }
-        .slide-in {
-            animation: slideIn 1s ease-in-out;
-        }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f2f6fa;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: auto;
+      padding: 4rem 2rem;
+    }
+
+    .section {
+      background: white;
+      padding: 3rem;
+      margin: 2rem 0;
+      border-radius: 16px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+      opacity: 0;
+      transform: translateY(40px);
+      animation: fadeInUp 0.8s ease forwards;
+    }
+
+    .section:nth-child(2) { animation-delay: 0.3s; }
+    .section:nth-child(3) { animation-delay: 0.6s; }
+    .section:nth-child(4) { animation-delay: 0.9s; }
+
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    h1, h2 {
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 1.1rem;
+      color: #555;
+    }
+
+    .services-list {
+      margin-top: 1.5rem;
+    }
+
+    .service {
+      margin: 1.2rem 0;
+      padding: 1rem;
+      border-left: 4px solid #007BFF;
+      background: #f9f9f9;
+      border-radius: 8px;
+    }
+
+    .service a {
+      color: #007BFF;
+      font-weight: bold;
+      text-decoration: none;
+    }
+<!-- Allture.in - Homepage -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Allture - Custom Websites at Low Price</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f2f6fa;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: auto;
+      padding: 4rem 2rem;
+    }
+
+    .section {
+      background: white;
+      padding: 3rem;
+      margin: 2rem 0;
+      border-radius: 16px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+      opacity: 0;
+      transform: translateY(40px);
+      animation: fadeInUp 0.8s ease forwards;
+    }
+
+    .section:nth-child(2) { animation-delay: 0.3s; }
+    .section:nth-child(3) { animation-delay: 0.6s; }
+    .section:nth-child(4) { animation-delay: 0.9s; }
+
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    h1, h2 {
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 1.1rem;
+      color: #555;
+    }
+
+    .services-list {
+      margin-top: 1.5rem;
+    }
+
+    .service {
+      margin: 1.2rem 0;
+      padding: 1rem;
+      border-left: 4px solid #007BFF;
+      background: #f9f9f9;
+      border-radius: 8px;
+    }
+
+    .service a {
+      color: #007BFF;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .contact-text {
+      font-size: 1.1rem;
+      margin-top: 1rem;
+    }
+
+    .help-btn {
+      display: inline-block;
+      margin-top: 2rem;
+      background-color: #007BFF;
+      color: white;
+      padding: 0.9rem 1.8rem;
+      border-radius: 10px;
+      text-decoration: none;
+      font-size: 1rem;
+    }
+
+    .help-btn:hover {
+      background-color: #0056b3;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      color: #888;
+      margin: 3rem 0 1rem;
+    }
+
+    @media (max-width: 600px) {
+      .section {
+        padding: 2rem;
+      }
+    }
   </style>
- </head>
- <body class="font-roboto bg-gray-900 text-gray-100">
-  <header class="bg-gradient-to-r from-blue-700 to-purple-800 text-white p-6 shadow-lg">
-   <div class="container mx-auto flex justify-between items-center">
-    <h1 class="text-3xl font-bold fade-in">
-     Allture.in
-    </h1>
-    <nav>
-     <ul class="flex space-x-6">
-      <li>
-       <a class="hover:underline" href="#services">
-        Services
-       </a>
-      </li>
-      <li>
-       <a class="hover:underline" href="#contact">
-        Contact
-       </a>
-      </li>
-     </ul>
-    </nav>
-   </div>
-  </header>
-  <main class="container mx-auto p-6">
-   <section class="text-center my-12">
-    <h2 class="text-4xl font-bold mb-6 fade-in">
-     Welcome to Allture, where ideas come to life!
-    </h2>
-    <p class="text-xl mb-4 slide-in">
-     At Allture, we believe that every idea holds the potential to change the world. Our platform turns your vision into reality by creating custom websites tailored to your unique concepts. Whether it's a simple idea or a grand vision, Allture bridges the gap between imagination and creation.
-    </p>
-    <p class="text-xl mb-4 slide-in">
-     But we’re more than just a website-building platform. Allture is a community where users can share ideas, inspire others, and collaborate on groundbreaking projects. Our mission is to empower creativity, foster innovation, and build a space where your dreams take digital form.
-    </p>
-    <p class="text-xl slide-in">
-     Join us on this journey of limitless possibilities and watch as Allture transforms your thoughts into reality.
-    </p>
-   </section>
-   <section class="my-12" id="services">
-    <h2 class="text-3xl font-bold mb-6 text-center fade-in">
-     Our Services
-    </h2>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-     <a class="bg-gray-800 p-6 rounded-lg shadow-lg transform transition-transform hover:scale-105 slide-in block" href="https://lovemeter.allture.in">
-      <img alt="Illustration of a heart with a meter indicating love compatibility" class="w-full h-48 object-cover rounded-t-lg mb-4" height="200" src="https://storage.googleapis.com/a1aa/image/XaY0JwEnm1o5G9J8THZ2la3fYPPCnme4toqeLuY6zulyg0NoA.jpg" width="300"/>
-      <h3 class="text-2xl font-bold mb-2">
-       Love Meter
-      </h3>
-      <p class="mb-4">
-       Discover the compatibility between you and your partner.
-      </p>
-     </a>
-     <a class="bg-gray-800 p-6 rounded-lg shadow-lg transform transition-transform hover:scale-105 slide-in block" href="https://qpdf.allture.in">
-      <img alt="img" class="w-full h-48 object-cover rounded-t-lg mb-4" height="200" src="https://storage.googleapis.com/a1aa/image/RlQqTK1JSGqaDVTqGAOAEp8vHXaNPD9X5D2wnK1geXznOdDKA.jpg" width="300"/>
-      <h3 class="text-2xl font-bold mb-2">
-       QR-UPI-TXT-PDF
-      </h3>
-      <p class="mb-4">
-       Generate QR codes, UPI links, and more.
-      </p>
-     </a>
-     <div class="bg-gray-800 p-6 rounded-lg shadow-lg transform transition-transform hover:scale-105 slide-in">
-      <img alt="img" class="w-full h-48 object-cover rounded-t-lg mb-4" height="200" src="https://storage.googleapis.com/a1aa/image/GumcERl2ZJbiN5ESH9XJJyOybHPp2eexntfWQWwF3bHxg0NoA.jpg" width="300"/>
-      <h3 class="text-2xl font-bold mb-2">
-       Instagram Boost
-      </h3>
-      <p class="mb-4">
-       Enhance your Instagram presence. Coming soon!
-      </p>
-     </div>
+</head>
+<body>
+
+  <div class="container">
+
+    <div class="section">
+      <h1>Welcome to Allture.in</h1>
+      <p>At Allture, we build <strong>custom websites at low cost</strong> for individuals, startups, and small businesses. Whether you need a basic landing page or a complete web system — we’ll make it simple, fast, and beautiful.</p>
     </div>
-   </section>
-   <section class="my-12" id="contact">
-    <h2 class="text-3xl font-bold mb-6 text-center fade-in">
-     Contact Us
-     </h2>
-    <p class="text-xl text-center slide-in">
-     Email us at:
-     <a class="text-blue-400 hover:underline" href="mailto:hello@allture.in">
-      hello@allture.in
-     </a>
-    </p>
-    </h2>
-    <p class="text-xl text-center slide-in">
-     Follow us on Instagram:
-     <a class="text-blue-400 hover:underline" href="https://instagram.com/allture.in">
-      @allture.in
-     </a>
-    </p>
-   </section>
-  </main>
-  <footer class="bg-gradient-to-r from-blue-700 to-purple-800 text-white p-6 text-center shadow-lg">
-   <p>
-    © 2025 Allture.in. All rights reserved.
-   </p>
-  </footer>
- </body>
-</html>
+
+    <div class="section">
+      <h2>Our Services</h2>
+      <p>We’re here to empower your digital presence. Here's what you can explore:</p>
+
+      <div class="services-list">
+        <div class="service">
+          <strong>🛠️ Custom Website Builds</strong> — Want your own personal or business website? <br />
+          <span style="display:block; margin-top: 0.5rem;">📧 <strong>Email us at</strong> <a href="mailto:hello@allture.in">hello@allture.in</a> to get started. We'll build you a site based on your needs, content, and budget.</span>
+        </div>
+
+        <div class="service">
+          <a href="#">URL Shortener</a> — A custom short-link generator for branding <span style="color:gray;">(coming soon)</span>.
+        </div>
+
+        <div class="service">
+          <a href="https://qpdf.allture.in" target="_blank">QR-PDF Tool</a> — Generate QR codes linking to your PDFs, perfect for shops, menus, and event banners.
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Contact Us</h2>
+      <p class="contact-text">📧 For any service or help, just email us directly at <strong>hello@allture.in</strong></p>
+    </div>
+
+    <div class="section">
+      <h2>Need Help?</h2>
+      <p>Our helpdesk is available 24x7. Visit the support portal to get assistance or submit your questions.</p>
+      <a href="https://help.allture.in" class="help-btn">Go to Help Center</a>
+    </div>
+
+    <footer>
+      &copy; 2025 Allture.in — All rights reserved
+    </footer>
+  </div>
+
+</body>
+</html>￼Enter
